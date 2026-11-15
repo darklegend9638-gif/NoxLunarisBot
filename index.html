@@ -2,261 +2,197 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Справка по командам</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lunaris</title>
+<link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABgAGADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5QRSTzUyL7UqJViOPoKAGJHmp0jyRxU0UJIrQgthtHfNAGeIWZueakFucVrR2Z9OasJYkjpQBhG3PWmtB7V0TWBx92oZLIjPBoA55oDSxYjYZjD8g9OSfStWS1I7VVmhPpigCtf3k88iNNGg2fw46/WpJ7u1EMYgh2v1crx+H1qKVG3Bup681HEkLTjzS0adj1wff2oAhiTIHAq7BFntmo7ZAT0FalnDlhQAtrbE44rZsLAsRhf0qxpdkZNoC17P8GPhdceKrr7Vc77fS4GAlmA+Z2/uJnv6noPyoA840Pwrf6nOsFjZT3MrdEijLH8hXoGnfBPxZMq+ZZWtsT/DPdIrD6gEkV9HP4YfTLSHS/C8aaTaqAZPLO1mIHV26tVHX3l8u3tNOuI5Z42xPIqjfKw+U4A7DBB70AeE33wN8WQwb4razujjIWC6Ut+RxmuB1/wAI6lpdw1vf2M9tKP4JUKn9a+xtJi1VrMSX+AYhiIMOCB6962dW0TSde0b7HqdpBdxMvCsOVPqp6qfcGgD8+b3TSmcofyrGu7XaTxX0V8XvhnL4cl+1WgefTZWxHIR80bf3H9/Q968a1XTihIK0AcNcQ89KpSx8GuivrYoT8tY9xFyaAG2kea29Nhyw4rNso84wK6PSYTvHFAHZeAdDuNX1i0061QPNcSrGgx3Jx+XevtHSdPtPDGi22nWcTeTaxbFCgZc/xMfcnmvn39mDTkm8dQ3Dpu+y20sw+uNo/wDQq+ho7fz1uQ7sz72YKWwDzwD7UAZPivxJYNBJaQvN9oC4dojgA4yBu/wrg/DtxPaapHJbhZZA4wHGcMc9vz5rVu7LUBcbXsmID4cqgbYPqK6fwiulT6lchbKITRkM8yptBJ5xzQBtjSZNQiA1ICMpwBGeCO/4VqBI0jGxiwXg+pFPeVQB8wIPBA6UsQ38kAEcZB60AUNf0uz1rSrnTr1Mw3CFHHp6MPcHBH0r48+IOgTaVqt1p9wgElu7RnjA4PX8etfanlgEkd+tfPP7RunqniprgKP39vG7cd8Ff6UAfMurW+GPFc5ex4J7V3WuQhSa5HUI+TxQBRsOoOa6bSCdy1y9m3IFdHpT4IGaAPon9mO8SHxrHE5A+0W0kQ9zgNj/AMdr2/VNRktYGRQuXlfeSeSAentjivlH4dazNpGs2d/A/wC8glWRRnrg9Poa+p9SFt4j0GO4014/9LUXFvk7ST/GpPqD1FAFKDWNkcrpEvmodiKT8pDHnOPpTZ2vrJJ5baKIWt0y4BYKY8jBIPesS2tp7eULOWBDBW3cbSeORXWQXlg+mRW8jpK/UjqRjPXtQBLJqxTToRaWk0jeWTuPRAPUk4JNM8P+Jr281uO0mtURHQj5f7w75NYGr3xkDn7ZsRHDiIqeeegwafZahC99BZxw3EEzqQ6qM+XnpyfvCgD0tpUA614L+0LcJN4jaPIPk26Ifryf617BNeQ2unNPcuyQ26GSUtwzAcAfU4r5t+IurHUtTuryVhvmcueent/SgDyzX8b2rj9RGWJrq9cfLtzWVpWlJq100cszRDB2FVzkjqKAOVe2ls7jypkK9wSOCPatPT5SCMmr17p+n3tkk1tdSsytjzD8ygEfxD+EdOaNG0S4YGW8VoYopCkq5AbHA+X15NAG7ol0yyLg5PWvZvhd46bTIm02/LzafMckL96Jum9Pf1HevIobTQYmm8vXYIYom8tiAZWY5xgDA9+RXpmj6FYSeFrtbS7/ALQurVN1ukJG4hiCD+PORQB7LHNBJF9tYf2lZuP9fCd20f7Q6qfrVKPXbiCV47IRhWBU5jxxz1968d8Oa7ruktNdW8s9n5B2yNu25P8Adx0J9q7Cx+JkwIe6sNLu3/vyW4z+mBQB0elxXmo6mJLdJJ5DIGYxx8AfXpXpiJZWFu2pao9rDJGMecRzx2B6mvI5viretFvtrfT7VwcgxQcg9M8k1x+u+M73U3Z7y8lmc92fOPoO1AHZ/EvxwNSU2VmzJZxnIBPzSH+8f6CvFPEN/uZiT1pNW1hiWJfvXMalfebn5qAM/VLjJOTWONTuLRwYJCMZ79/X2NPv58k81j3Eoyc5NAEMeoy2unSfZ7pcyoEkQHOR2NNi8W6wLfyVu3UAKFI6rjjr1qprwtJ0WSK5C4J+QD5ceoP17ViJKQcZBFAG/p2pzQzB87uQST1Neu/D34k6DpUCQX1pdRSsAslxEwyRknp6c14hbyq5KhVDtwuKkjlZGKnIYHBFAH1V4pvbvX/Dy3/hm3bUrW+Ki5KfM8fl8rhe3uRzXOaJoWuahJbqlvJAJlZw8yFUCg4yTj69fSvGvD/irWdDdZNL1CW2ZTkbTx+R4r0vwT8T5NVu1s/EN6ltKRlbpnKJxnhh0ycj24oA2fEVrqWh3VxbXKlo4sHzV5UgnAOfc1zM2rNztevTtb1GKXw1/Z2s6jGYmI3su0GQDnCg9OO4rxHXNWW+1Oe5SJIY2bCInRVAAH6AUAXb2/3HOax7i7O7Oc85qtLc5X3qjPN15oAnurkOSe9Zk75Joll561Wkck4oA//Z">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #f5f6f8; --card: #ffffff; --text: #1c1e21; --muted: #626a75;
-    --accent: #2b7de9; --code: #eef1f5; --border: #e1e4e8;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #14161a; --card: #1e2127; --text: #e8eaed; --muted: #9aa3af;
-      --accent: #5aa2ff; --code: #2a2e36; --border: #2e323a;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; padding: 16px; background: var(--bg); color: var(--text);
-    font: 16px/1.5 -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  }
-  main { max-width: 720px; margin: 0 auto; }
-  h1 { font-size: 24px; margin: 8px 0 4px; }
-  .sub { color: var(--muted); margin: 0 0 20px; }
-  .cmd {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 12px; padding: 14px 16px; margin-bottom: 12px;
-  }
-  .cmd h2 { font-size: 18px; margin: 0 0 6px; }
-  .cmd p { margin: 6px 0; }
-  code {
-    background: var(--code); padding: 2px 6px; border-radius: 6px;
-    font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px;
-  }
-  .grp { font-size: 20px; margin: 24px 0 10px; }
-  .muted { color: var(--muted); font-size: 14px; }
-  .tbl { overflow-x: auto; }
-  table { border-collapse: collapse; width: 100%; margin-top: 6px; }
-  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); font-size: 14px; }
-  th { color: var(--muted); font-weight: 600; }
+:root{--bg:#0a101c;--panel:#101a2b;--line:#1d2a42;--text:#e9eef7;--mut:#8d9bb3;--acc:#5ad1ff;--acc2:#a78bfa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#12233d 0,transparent 60%),var(--bg);color:var(--text);font:16px/1.55 Manrope,system-ui,"Segoe UI",Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+body{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+#q,.row code,.ns{-webkit-user-select:text;user-select:text}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;gap:20px;padding:18px 0}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;letter-spacing:-.02em}
+.ava{position:relative;width:46px;height:46px;flex:none}
+.ava img{width:100%;height:100%;border-radius:14px;object-fit:cover;border:2px solid #2b4a78;box-shadow:0 0 0 1px #0a101c,0 6px 18px #5ad1ff22;display:block}
+.ava i{position:absolute;right:-5px;bottom:-4px;width:13px;height:13px;border-radius:50%;background:#3de0a0;border:2px solid var(--bg)}.logo b{color:var(--acc)}
+nav .sp{flex:1}
+nav a.l{color:var(--mut);font-weight:600}nav a.l:hover{color:var(--text)}
+.lang{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--mut);font:700 13px Manrope,sans-serif;padding:9px 12px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--acc);color:#04202e}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding:56px 0 72px}
+.st{display:inline-flex;gap:10px;align-items:center;color:var(--mut);font-weight:600;font-size:14px}
+.dot{width:10px;height:10px;border-radius:50%;background:#3de0a0;box-shadow:0 0 0 4px #3de0a033}
+h1{font-size:clamp(42px,6.6vw,84px);line-height:1;letter-spacing:-.035em;font-weight:800;margin:18px 0 22px}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{color:var(--mut);font-size:19px;max-width:30em;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 24px;border-radius:14px;font-weight:700;border:1px solid var(--line);background:transparent;color:var(--text)}
+.btn.p{background:var(--acc);color:#04202e;border-color:var(--acc);box-shadow:0 10px 30px #5ad1ff44}
+.chat{background:var(--panel);border:1px solid var(--line);border-radius:26px;overflow:hidden}
+.chat header{padding:16px 22px;border-bottom:1px solid var(--line);color:var(--mut);font-size:14px}
+.chat header b{color:var(--text);margin-right:8px}
+.msgs{padding:22px;display:grid;gap:18px;min-height:330px;align-content:end}
+.m{display:flex;gap:12px}
+.av{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:#a78bfa;color:#1a1033}
+.av.b{border-radius:14px;background:#0f2a44 url("data:image/jpeg;base64,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") center/cover;color:transparent}
+.nm{font-weight:800}.tag{background:var(--acc);color:#04202e;font-size:11px;font-weight:800;border-radius:5px;padding:1px 6px;margin-left:6px}
+.cmd{display:inline-block;background:#1a2740;border-radius:6px;padding:1px 8px;font-family:ui-monospace,Consolas,monospace}
+.emb{margin-top:8px;background:#0c1626;border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 16px;min-width:260px}
+.emb b{display:block;margin-bottom:4px}.emb span{display:block;color:var(--mut)}
+.ref{padding:24px 0 80px}
+.ref h2{font-size:34px;letter-spacing:-.02em;margin:0 0 6px}
+.note{color:var(--mut);margin:0 0 22px}
+.tools{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+#q{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px 16px;font:600 15px Manrope,sans-serif}
+#q:focus,.chip:focus-visible,.lang button:focus-visible{outline:2px solid var(--acc)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:none;border:1px solid var(--line);color:var(--mut);border-radius:999px;padding:9px 16px;font:700 14px Manrope,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{border-color:var(--acc);color:var(--acc);background:#5ad1ff14}
+.grp{margin:30px 0 10px;font-size:20px}
+.row{display:grid;grid-template-columns:minmax(200px,300px) 1fr;gap:20px;padding:14px 4px;border-bottom:1px solid var(--line)}
+.row code{font:600 14px ui-monospace,Consolas,monospace;color:var(--acc);word-break:break-word}
+.row p{margin:0;color:#c3cee0}
+.ns{margin-top:6px;color:var(--mut);font-size:13px}
+.ns span{font-weight:700;color:var(--text)}
+.empty{color:var(--mut);padding:24px 0}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--mut);font-size:14px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:24px}.row{grid-template-columns:1fr;gap:4px}nav a.l{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<main>
-  <h1>📖 Справка по командам</h1>
-  <p class="sub">Команды работают со слешем и текстом без него («Баланс», «Работа», «Красное 100»). Суммы: <code>100</code>, <code>1к</code>, <code>2.5к</code>, <code>1кк</code>, <code>все</code>.</p>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#"><span class="ava"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABgAGADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5QRSTzUyL7UqJViOPoKAGJHmp0jyRxU0UJIrQgthtHfNAGeIWZueakFucVrR2Z9OasJYkjpQBhG3PWmtB7V0TWBx92oZLIjPBoA55oDSxYjYZjD8g9OSfStWS1I7VVmhPpigCtf3k88iNNGg2fw46/WpJ7u1EMYgh2v1crx+H1qKVG3Bup681HEkLTjzS0adj1wff2oAhiTIHAq7BFntmo7ZAT0FalnDlhQAtrbE44rZsLAsRhf0qxpdkZNoC17P8GPhdceKrr7Vc77fS4GAlmA+Z2/uJnv6noPyoA840Pwrf6nOsFjZT3MrdEijLH8hXoGnfBPxZMq+ZZWtsT/DPdIrD6gEkV9HP4YfTLSHS/C8aaTaqAZPLO1mIHV26tVHX3l8u3tNOuI5Z42xPIqjfKw+U4A7DBB70AeE33wN8WQwb4razujjIWC6Ut+RxmuB1/wAI6lpdw1vf2M9tKP4JUKn9a+xtJi1VrMSX+AYhiIMOCB6962dW0TSde0b7HqdpBdxMvCsOVPqp6qfcGgD8+b3TSmcofyrGu7XaTxX0V8XvhnL4cl+1WgefTZWxHIR80bf3H9/Q968a1XTihIK0AcNcQ89KpSx8GuivrYoT8tY9xFyaAG2kea29Nhyw4rNso84wK6PSYTvHFAHZeAdDuNX1i0061QPNcSrGgx3Jx+XevtHSdPtPDGi22nWcTeTaxbFCgZc/xMfcnmvn39mDTkm8dQ3Dpu+y20sw+uNo/wDQq+ho7fz1uQ7sz72YKWwDzwD7UAZPivxJYNBJaQvN9oC4dojgA4yBu/wrg/DtxPaapHJbhZZA4wHGcMc9vz5rVu7LUBcbXsmID4cqgbYPqK6fwiulT6lchbKITRkM8yptBJ5xzQBtjSZNQiA1ICMpwBGeCO/4VqBI0jGxiwXg+pFPeVQB8wIPBA6UsQ38kAEcZB60AUNf0uz1rSrnTr1Mw3CFHHp6MPcHBH0r48+IOgTaVqt1p9wgElu7RnjA4PX8etfanlgEkd+tfPP7RunqniprgKP39vG7cd8Ff6UAfMurW+GPFc5ex4J7V3WuQhSa5HUI+TxQBRsOoOa6bSCdy1y9m3IFdHpT4IGaAPon9mO8SHxrHE5A+0W0kQ9zgNj/AMdr2/VNRktYGRQuXlfeSeSAentjivlH4dazNpGs2d/A/wC8glWRRnrg9Poa+p9SFt4j0GO4014/9LUXFvk7ST/GpPqD1FAFKDWNkcrpEvmodiKT8pDHnOPpTZ2vrJJ5baKIWt0y4BYKY8jBIPesS2tp7eULOWBDBW3cbSeORXWQXlg+mRW8jpK/UjqRjPXtQBLJqxTToRaWk0jeWTuPRAPUk4JNM8P+Jr281uO0mtURHQj5f7w75NYGr3xkDn7ZsRHDiIqeeegwafZahC99BZxw3EEzqQ6qM+XnpyfvCgD0tpUA614L+0LcJN4jaPIPk26Ifryf617BNeQ2unNPcuyQ26GSUtwzAcAfU4r5t+IurHUtTuryVhvmcueent/SgDyzX8b2rj9RGWJrq9cfLtzWVpWlJq100cszRDB2FVzkjqKAOVe2ls7jypkK9wSOCPatPT5SCMmr17p+n3tkk1tdSsytjzD8ygEfxD+EdOaNG0S4YGW8VoYopCkq5AbHA+X15NAG7ol0yyLg5PWvZvhd46bTIm02/LzafMckL96Jum9Pf1HevIobTQYmm8vXYIYom8tiAZWY5xgDA9+RXpmj6FYSeFrtbS7/ALQurVN1ukJG4hiCD+PORQB7LHNBJF9tYf2lZuP9fCd20f7Q6qfrVKPXbiCV47IRhWBU5jxxz1968d8Oa7ruktNdW8s9n5B2yNu25P8Adx0J9q7Cx+JkwIe6sNLu3/vyW4z+mBQB0elxXmo6mJLdJJ5DIGYxx8AfXpXpiJZWFu2pao9rDJGMecRzx2B6mvI5viretFvtrfT7VwcgxQcg9M8k1x+u+M73U3Z7y8lmc92fOPoO1AHZ/EvxwNSU2VmzJZxnIBPzSH+8f6CvFPEN/uZiT1pNW1hiWJfvXMalfebn5qAM/VLjJOTWONTuLRwYJCMZ79/X2NPv58k81j3Eoyc5NAEMeoy2unSfZ7pcyoEkQHOR2NNi8W6wLfyVu3UAKFI6rjjr1qprwtJ0WSK5C4J+QD5ceoP17ViJKQcZBFAG/p2pzQzB87uQST1Neu/D34k6DpUCQX1pdRSsAslxEwyRknp6c14hbyq5KhVDtwuKkjlZGKnIYHBFAH1V4pvbvX/Dy3/hm3bUrW+Ki5KfM8fl8rhe3uRzXOaJoWuahJbqlvJAJlZw8yFUCg4yTj69fSvGvD/irWdDdZNL1CW2ZTkbTx+R4r0vwT8T5NVu1s/EN6ltKRlbpnKJxnhh0ycj24oA2fEVrqWh3VxbXKlo4sHzV5UgnAOfc1zM2rNztevTtb1GKXw1/Z2s6jGYmI3su0GQDnCg9OO4rxHXNWW+1Oe5SJIY2bCInRVAAH6AUAXb2/3HOax7i7O7Oc85qtLc5X3qjPN15oAnurkOSe9Zk75Joll561Wkck4oA//Z" alt="" width="46" height="46"><i></i></span><span>Lunaris<b>.</b></span></a>
+    <span class="sp"></span>
+    <a class="l" href="#ref" data-t="nav"></a>
+    <a class="l" id="news" target="_blank" rel="noopener" data-t="news"></a>
+    <div class="lang" role="group" aria-label="Language" id="lang"></div>
+  </nav>
 
-  <h2 class="grp">🎮 Игры</h2>
-  <section class="cmd">
-    <h2>💣 Мины</h2>
-    <p><code>/mines 100</code> · «Мины 100»</p>
-    <p>Поле 5×5, 6 мин. Открывайте 💎, множитель растёт с каждой клеткой. Нажмите «Забрать», чтобы взять выигрыш. Мина — ставка сгорает. Минимум 5 монет. Если поставили и не открыли ни одной клетки за 60 секунд — игра отменяется, ставка возвращается.</p>
-  </section>
-  <section class="cmd">
-    <h2>🃏 Блэкджек</h2>
-    <p><code>/blackjack 100</code> · «Блэкджек 100» · «бж 100»</p>
-    <p>Наберите ближе к 21, чем дилер. Кнопки: взять, стоп, удвоить. Дилер берёт до 17. Блэкджек (21 с двух карт) платит 3:2, победа — 1:1, ничья возвращает ставку. Если поставили и не нажали ни одной кнопки за 60 секунд — игра отменяется, ставка возвращается.</p>
-  </section>
-  <section class="cmd">
-    <h2>🎰 Рулетка</h2>
-    <p>Пишите без слеша: «красное 100» · «1000 чёрное» · «зелёное 100»</p>
-    <p>Числа 0–36. 🔴 красное и ⚫ чёрное платят x2, 🟢 зелёное (выпадает только 0) — x36. Шансы на красное и чёрное одинаковые (по 18 из 37), на зелёное — 1 из 37. Колесо прокручивается с анимацией.</p>
-  </section>
-  <section class="cmd">
-    <h2>📜 Лог рулетки</h2>
-    <p><code>/log</code></p>
-    <p>Последние 10 выпадений: число, цвет и кто играл.</p>
-  </section>
-  <section class="cmd">
-    <h2>⚔️ Дуэль (русская рулетка с предметами)</h2>
-    <p><code>/duel 100</code> — игра с дилером (ботом) · <code>/duel @ник 100</code> — вызов игроку · <code>/duel open 100</code> — вызов для всех · <code>/rr 100</code> · «Дуэль 100» · «рр 100»</p>
-    <p>Если соперник не указан, вы играете против 🎩 дилера: он ходит сам, пользуется предметами и считает патроны. Выиграли — получаете ставку сверху (x2), проиграли — ставка уходит дилеру. Дуэль с дилером работает и в личке.</p>
-    <p>Дуэль с игроком — только в группах. Бот пришлёт вызов с кнопкой «Принять»: если указан ник, принять может только он, а при «open» — любой игрок, кроме автора. Вызов действует 60 секунд. Оба вносят ставку, победитель забирает весь банк. Минимум 5 монет. Игрок может быть только в одной дуэли.</p>
-    <p><b>Правила (как в Buckshot Roulette).</b> Дробовик заряжен случайной смесью 🔴 боевых и 🔵 холостых патронов, их количество известно, порядок скрыт. У каждого 4 ❤️. В свой ход выстрелите в соперника или в себя. Боевой отнимает 1 ❤️. Холостой в себя — ходите ещё раз, холостой в соперника — ход переходит. <b>Побеждает тот, кто снесёт все ❤️ соперника.</b> Если игрок молчит 90 секунд, ему засчитывается поражение.</p>
-    <p><b>Раунды.</b> Когда патроны в стволе кончаются, начинается следующий раунд: дробовик перезаряжается, а всем выдаются новые предметы (максимум 6 на руках). Жизни при этом не восстанавливаются. С каждым раундом патронов чуть больше: в 1-м раунде 3–4, во 2-м 4–5, в 3-м и дальше 5–6, боевых из них примерно от трети до половины. Предметов тоже прибавляется: 1, 2 и 3 каждому.</p>
-    <div class="tbl"><table>
-      <tr><th>Предмет</th><th>Что делает</th></tr>
-      <tr><td>🔎 Лупа</td><td>показывает текущий патрон (видно только вам)</td></tr>
-      <tr><td>🍺 Пиво</td><td>выбрасывает текущий патрон</td></tr>
-      <tr><td>🚬 Сигареты</td><td>+1 ❤️ (не выше максимума)</td></tr>
-      <tr><td>🪚 Пила</td><td>следующий выстрел наносит x2 урона</td></tr>
-      <tr><td>🔗 Наручники</td><td>соперник пропускает следующий ход</td></tr>
-      <tr><td>💊 Таблетки</td><td>50% — +2 ❤️, 50% — −1 ❤️</td></tr>
-      <tr><td>🔄 Инвертор</td><td>меняет текущий патрон на противоположный</td></tr>
-      <tr><td>📱 Телефон</td><td>показывает один из следующих патронов (видно только вам)</td></tr>
-    </table></div>
-    <p class="muted">Если бот перезапустится посреди дуэли, ставки вернутся обоим игрокам.</p>
+  <section class="hero">
+    <div>
+      <div class="st"><i class="dot"></i><span data-t="online"></span></div>
+      <h1 data-t="h1"></h1>
+      <p class="sub" data-t="sub"></p>
+      <div class="btns">
+        <a class="btn p" id="open" target="_blank" rel="noopener" data-t="open"></a>
+        <a class="btn" href="#ref" data-t="nav"></a>
+      </div>
+    </div>
+    <div class="chat" aria-hidden="true">
+      <header><b>#<span data-t="chan"></span></b><span data-t="chansub"></span></header>
+      <div class="msgs">
+        <div class="m"><div class="av">G</div><div><span class="nm" data-t="guest"></span><br><span class="cmd">/balance</span></div></div>
+        <div class="m"><div class="av b">L</div><div><span class="nm">Lunaris</span><span class="tag">BOT</span>
+          <div class="emb"><b data-t="bal"></b><span data-t="hand"></span><span data-t="bank"></span><span data-t="total"></span></div></div></div>
+      </div>
+    </div>
   </section>
 
-  <h2 class="grp">🕵️ Мафия</h2>
-  <section class="cmd">
-    <h2>🕵️ Начать игру</h2>
-    <p><code>/mafia</code> · «Мафия»</p>
-    <p>Пишется в группе, где есть бот. Перед этим откройте личку с ботом и нажмите /start, иначе роли не придут. В лобби нажмите «Войти», когда соберётся от 5 до 20 игроков, создатель жмёт «Старт» (или «Отмена»). Победителям +250 💰 и +1 💎. Ставок нет.</p>
+  <section class="ref" id="ref">
+    <h2 data-t="reft"></h2>
+    <p class="note" data-t="refn"></p>
+    <div class="tools"><input id="q" type="search" autocomplete="off"><div class="chips" id="chips"></div></div>
+    <div id="list"></div>
   </section>
-  <section class="cmd">
-    <h2>📜 Роли</h2>
-    <p><code>/mafia роли</code></p>
-    <p>Список всех ролей с описанием.</p>
-    <div class="tbl"><table>
-      <tr><th>Роль</th><th>Команда</th><th>Что делает</th></tr>
-      <tr><td>🕵🏼 Комиссар Каттани</td><td>🏙 Город</td><td>Каждую ночь проверяешь роль игрока или стреляешь в него. В первую ночь стрелять нельзя.</td></tr>
-      <tr><td>👮🏼 Сержант</td><td>🏙 Город</td><td>Комиссар делится с тобой ходами. Если он погибнет — ты займёшь его место.</td></tr>
-      <tr><td>🎖 Мэр</td><td>🏙 Город</td><td>На дневном голосовании твой голос равен двум.</td></tr>
-      <tr><td>👨🏼‍⚕ Доктор</td><td>🏙 Город</td><td>Ночью лечишь игрока и спасаешь от убийства. Себя — только один раз.</td></tr>
-      <tr><td>💃 Любовница</td><td>🏙 Город</td><td>Навещаешь игрока: он не сможет действовать ночью и голосовать днём.</td></tr>
-      <tr><td>🧙🏻 Бомж</td><td>🏙 Город</td><td>Заходишь за бутылкой к игроку и узнаёшь, кто ещё приходил к нему ночью.</td></tr>
-      <tr><td>👨🏼 Мирный житель</td><td>🏙 Город</td><td>Вычисляй мафию и линчуй её на городском собрании.</td></tr>
-      <tr><td>🤞🏼 Счастливчик</td><td>🏙 Город</td><td>У тебя две жизни: первое ночное нападение переживёшь.</td></tr>
-      <tr><td>💣 Камикадзе</td><td>🏙 Город</td><td>Убьют ночью — заберёшь убийцу. Казнят днём — сам выберешь, кто уйдёт с тобой.</td></tr>
-      <tr><td>🤦🏼 Самоубийца</td><td>🏙 Город</td><td>Побеждаешь, если тебя казнят на дневном собрании. Ночью убьют или доживёшь — проиграл.</td></tr>
-      <tr><td>🤵🏻 Дон</td><td>🤵 Мафия</td><td>Глава мафии: твой выбор жертвы решающий. Раз за игру — умная пуля.</td></tr>
-      <tr><td>🤵🏼 Мафия</td><td>🤵 Мафия</td><td>Ночью с группировкой решаешь, кто не проснётся.</td></tr>
-      <tr><td>👨🏼‍💼 Адвокат</td><td>🤵 Мафия</td><td>Защищённый игрок не будет казнён, а мафию Комиссар увидит мирным жителем. Себя — 1 раз.</td></tr>
-      <tr><td>🕴️ Убийца</td><td>🤵 Мафия</td><td>Убиваешь любого, спасти жертву нельзя. Погибнешь, если нападёшь на Комиссара.</td></tr>
-      <tr><td>🔪 Маньяк</td><td>🐺 Одиночка</td><td>Играешь один и убиваешь каждую ночь. Раз за игру — умная пуля.</td></tr>
-      <tr><td>🐺 Оборотень</td><td>🐺 Одиночка</td><td>Играешь сам за себя. Убьёт Мафия — станешь Мафией, Комиссар — Сержантом, Маньяк — погибнешь. Дожил до конца — победил.</td></tr>
-      <tr><td>🧟 Поджигатель</td><td>🐺 Одиночка</td><td>Каждую ночь обливаешь игрока. Выберешь себя — все облитые и ты сгорите. Сожжёшь 3+ — победа.</td></tr>
-    </table></div>
-    <p class="muted">🎯 Умная пуля (Комиссар, Дон, Маньяк, 1 раз за игру): бьёт случайную активную роль и пробивает вторую жизнь Счастливчика. Доктор лечит как обычно.</p>
-  </section>
-  <section class="cmd">
-    <h2>🌙 Ход игры</h2>
-    <p><b>Ночь</b> (45 сек.): активные роли выбирают действие кнопками в личке бота, остальные получают «Ты спишь». Мёртвые и спящие игроки не пишут в чат: сообщения игроков ночью удаляются.</p>
-    <p><b>Утро:</b> бот объявляет, кто погиб и какая у него была роль. Личные результаты (проверка Комиссара, визиты Бомжа и т.д.) приходят в личку.</p>
-    <p><b>Обсуждение</b> (60 сек.) и <b>голосование</b> (40 сек.): кнопки в группе. Голос Мэра равен двум, «⏭ Никого» — пропуск. При ничьей никого не казнят.</p>
-    <p class="muted">Чтобы удаление сообщений работало, сделайте бота админом группы с правом «Удалять сообщения». Сообщения погибших игроков удаляются до конца игры.</p>
-  </section>
-  <section class="cmd">
-    <h2>👤 Профиль и магазин</h2>
-    <p><code>/mprofile</code> · «мпрофиль» · <code>/mafia профиль</code></p>
-    <p>Профиль: 💵, 💎, предметы, победы и сыгранные игры. Кнопки ON/OFF включают и выключают предметы. Также в профиле: «Магазин», «Купить 💵» и «Купить 💎» (за Telegram Stars), «Активная роль», «Обмен 1000💵→1💎», «Подключиться к игре».</p>
-    <div class="tbl"><table>
-      <tr><th>Предмет</th><th>Цена</th><th>Что делает</th></tr>
-      <tr><td>🛡 Защита</td><td>💵 140</td><td>спасает от ночного убийства один раз (не помогает против Убийцы, умной пули и винтовки)</td></tr>
-      <tr><td>📁 Документы</td><td>💵 190</td><td>для Дона, Мафии, Адвоката и Маньяка: Комиссар увидит мирного жителя</td></tr>
-      <tr><td>🎭 Маска</td><td>💎 1</td><td>скрывает вас от Бомжа</td></tr>
-      <tr><td>🔫 Винтовка</td><td>💎 1</td><td>выстрел пробивает чужую 🛡 Защиту</td></tr>
-      <tr><td>🎯 Умная пуля</td><td>💎 5</td><td>ещё одна умная пуля для Комиссара, Дона и Маньяка</td></tr>
-      <tr><td>🚑 Защита от Убийцы</td><td>💎 2</td><td>спасает только от покушения Убийцы</td></tr>
-      <tr><td>⚖️ Защита от голосования</td><td>💎 1</td><td>не казнят на дневном голосовании (один раз)</td></tr>
-      <tr><td>🃏 Активная роль</td><td>💎 3</td><td>купленная роль достанется вам в следующей игре</td></tr>
-      <tr><td>🔄 Обнулить статистику</td><td>💵 500</td><td>сбрасывает победы и игры</td></tr>
-    </table></div>
-  </section>
+  <footer data-t="foot"></footer>
+</div>
 
-  <h2 class="grp">💰 Деньги</h2>
-  <section class="cmd">
-    <h2>💰 Баланс</h2>
-    <p><code>/balance</code></p>
-    <p>Наличные, деньги в банке и общая сумма. Стартовый баланс — 1 000.</p>
-  </section>
-  <section class="cmd">
-    <h2>🎁 Бонус</h2>
-    <p><code>/bonus</code></p>
-    <p>+500 монет раз в 24 часа. Выдаётся в личке с ботом после капчи. В группе бот пришлёт кнопку.</p>
-  </section>
-  <section class="cmd">
-    <h2>💼 Работа</h2>
-    <p><code>/work</code></p>
-    <p>Заработок 80–250 монет раз в час. С ⛏ лопатой — вдвое больше.</p>
-  </section>
-  <section class="cmd">
-    <h2>🏦 Банк</h2>
-    <p><code>/deposit 500</code> · <code>/withdraw 500</code></p>
-    <p>Деньги на счёте приносят ~1,2% в сутки (до 7 дней накопления) и защищены от ограбления. За операции берётся комиссия (см. ниже).</p>
-  </section>
-  <section class="cmd">
-    <h2>💸 Переводы</h2>
-    <p><code>/pay @ник 100</code> · <code>/transfer @ник 100</code></p>
-    <p><b>/pay</b> — наличными, с рук на руки. <b>/transfer</b> — с вашего банковского счёта на счёт получателя (безопасно от грабежа). Игрока можно указать @ником, ID, именем или ответом на его сообщение. Комиссия сверху суммы, получатель получает полную сумму.</p>
-  </section>
-  <section class="cmd">
-    <h2>📊 Комиссии</h2>
-    <p><code>/commission</code></p>
-    <p>Показывает все комиссии. 💳 VIP-карта снижает их вдвое.</p>
-    <div class="tbl"><table>
-      <tr><th>Операция</th><th>По умолчанию</th></tr>
-      <tr><td>Положить в банк</td><td>0%</td></tr>
-      <tr><td>Снять из банка</td><td>1%</td></tr>
-      <tr><td>Перевод наличными</td><td>2%</td></tr>
-      <tr><td>Перевод в банк</td><td>1%</td></tr>
-      <tr><td>Налог аукциона</td><td>5%</td></tr>
-    </table></div>
-  </section>
+<script>
+// ссылки: поставьте свои
+const BOT_URL = "https://t.me/LunarisBot", NEWS_URL = "https://t.me/LunarisBot_News";
 
-  <section class="cmd">
-    <h2>⭐ Монеты за звёзды</h2>
-    <p><code>/stars</code> · «Звёзды» · «Донат»</p>
-    <p>Выберите пакет, оплатите счёт звёздами Telegram — монеты придут на руки сразу. Работает в личке с ботом.</p>
-  </section>
+const UI = {
+ru:{ns:"Без /",nav:"Команды",news:"Новости",online:"Онлайн",h1:"Игры и экономика для вашего чата.",sub:"Мины, блэкджек, рулетка, дуэли, мафия, банк и магазин. Всё в Telegram.",open:"Открыть бота",chan:"общий",chansub:"играем, зарабатываем",guest:"Гость",bal:"💰 Баланс",hand:"👛 На руках: 1 000",bank:"🏦 В банке: 0",total:"📊 Всего: 1 000",reft:"Справка по командам",refn:"Работают со слешем и текстом без него: «Баланс», «Работа», «Красное 100». Суммы: 100, 1к, 2.5к, 1кк, все.",ph:"Найти команду…",all:"Все",none:"Ничего не найдено",foot:"Монеты виртуальные и не имеют реальной стоимости.",
+ cats:{games:"🎮 Игры",mafia:"🕵️ Мафия",money:"💰 Деньги",crime:"🥷 Торговля и криминал",misc:"🏆 Прочее",owner:"👑 Для владельцев"}},
+en:{ns:"No slash",nav:"Commands",news:"News",online:"Online",h1:"Games and economy for your chat.",sub:"Mines, blackjack, roulette, duels, mafia, bank and shop. All inside Telegram.",open:"Open the bot",chan:"general",chansub:"playing, earning",guest:"Guest",bal:"💰 Balance",hand:"👛 Cash: 1,000",bank:"🏦 In bank: 0",total:"📊 Total: 1,000",reft:"Command reference",refn:"Use them with a slash or as plain text: “Balance”, “Work”, “Red 100”. Amounts: 100, 1k, 2.5k, 1kk, all.",ph:"Find a command…",all:"All",none:"Nothing found",foot:"Coins are virtual and have no real-world value.",
+ cats:{games:"🎮 Games",mafia:"🕵️ Mafia",money:"💰 Money",crime:"🥷 Trade and crime",misc:"🏆 Other",owner:"👑 Bot owners"}},
+uk:{ns:"Без /",nav:"Команди",news:"Новини",online:"Онлайн",h1:"Ігри та економіка для вашого чату.",sub:"Міни, блекджек, рулетка, дуелі, мафія, банк і магазин. Усе в Telegram.",open:"Відкрити бота",chan:"загальний",chansub:"граємо, заробляємо",guest:"Гість",bal:"💰 Баланс",hand:"👛 Готівка: 1 000",bank:"🏦 У банку: 0",total:"📊 Усього: 1 000",reft:"Довідка з команд",refn:"Працюють зі слешем і текстом без нього: «Баланс», «Робота», «Червоне 100». Суми: 100, 1к, 2.5к, 1кк, все.",ph:"Знайти команду…",all:"Усі",none:"Нічого не знайдено",foot:"Монети віртуальні й не мають реальної вартості.",
+ cats:{games:"🎮 Ігри",mafia:"🕵️ Мафія",money:"💰 Гроші",crime:"🥷 Торгівля та злочин",misc:"🏆 Інше",owner:"👑 Для власників"}},
+pl:{ns:"Bez /",nav:"Komendy",news:"Nowości",online:"Online",h1:"Gry i ekonomia dla Twojego czatu.",sub:"Miny, blackjack, ruletka, pojedynki, mafia, bank i sklep. Wszystko w Telegramie.",open:"Otwórz bota",chan:"ogólny",chansub:"gramy, zarabiamy",guest:"Gość",bal:"💰 Saldo",hand:"👛 Gotówka: 1 000",bank:"🏦 W banku: 0",total:"📊 Razem: 1 000",reft:"Lista komend",refn:"Działają ze slashem i jako zwykły tekst: „Saldo”, „Praca”, „Czerwone 100”. Kwoty: 100, 1k, 2.5k, 1kk, all.",ph:"Szukaj komendy…",all:"Wszystkie",none:"Nic nie znaleziono",foot:"Monety są wirtualne i nie mają realnej wartości.",
+ cats:{games:"🎮 Gry",mafia:"🕵️ Mafia",money:"💰 Pieniądze",crime:"🥷 Handel i przestępczość",misc:"🏆 Inne",owner:"👑 Dla właścicieli"}}
+};
 
-  <h2 class="grp">🥷 Криминал и торговля</h2>
-  <section class="cmd">
-    <h2>🥷 Ограбление</h2>
-    <p><code>/rob @ник</code></p>
-    <p>Только в группах и только наличные (банк защищён). Шанс 40%. Пауза 2 часа. При провале — штраф жертве. Жертву нельзя грабить повторно 30 минут. Щит защищает от ограбления.</p>
-  </section>
-  <section class="cmd">
-    <h2>🛒 Магазин</h2>
-    <p><code>/shop</code> · <code>/buy 1 [кол-во]</code> · <code>/inventory</code> · <code>/use 1</code></p>
-    <p>Предметы:</p>
-    <div class="tbl"><table>
-      <tr><th>№</th><th>Предмет</th><th>Цена</th><th>Что делает</th></tr>
-      <tr><td>1</td><td>🛡 Щит</td><td>500</td><td>защита от ограбления на 24 ч (/use 1)</td></tr>
-      <tr><td>2</td><td>🗝 Отмычка</td><td>300</td><td>+25% к шансу ограбления, тратится при попытке</td></tr>
-      <tr><td>3</td><td>⛏ Лопата</td><td>400</td><td>следующая работа x2, тратится сама</td></tr>
-      <tr><td>4</td><td>🎁 Лутбокс</td><td>1 000</td><td>300–2500 монет или предмет (/use 4)</td></tr>
-      <tr><td>5</td><td>🍀 Клевер</td><td>700</td><td>при проигрыше в рулетке/блэкджеке вернёт 50% ставки, тратится сам</td></tr>
-      <tr><td>6</td><td>💳 VIP-карта</td><td>5 000</td><td>комиссии вдвое меньше на 7 дней (/use 6)</td></tr>
-    </table></div>
-  </section>
-  <section class="cmd">
-    <h2>🔨 Аукцион</h2>
-    <p><code>/auction</code> · <code>/auction sell 2 500</code> · <code>/bid 3 600</code> · <code>/auction cancel 3</code></p>
-    <p>Выставляйте предметы из инвентаря: <code>/auction sell &lt;предмет&gt; &lt;старт&gt;</code>. Торги идут 1 час. Минимальный шаг ставки — 5%. Перебитая ставка возвращается. С продажи берётся налог.</p>
-  </section>
+// [группа, команда, ru, en, uk, pl]
+const C = [
+["games","/mines 100","Мины: открывайте 💎, забирайте выигрыш до мины.","Mines: open 💎 and cash out before you hit a mine.","Міни: відкривайте 💎 і забирайте виграш до міни.","Miny: odkrywaj 💎 i wypłać zanim trafisz minę."],
+["games","/blackjack 100","Блэкджек: наберите ближе к 21, чем дилер.","Blackjack: get closer to 21 than the dealer.","Блекджек: наберіть ближче до 21, ніж дилер.","Blackjack: zbliż się do 21 bardziej niż krupier."],
+["games","красное 100 · red 100","Рулетка: красное и чёрное x2, зелёное x36. Только текстом, без слеша.","Roulette: red and black pay x2, green x36. Text only, no slash.","Рулетка: червоне й чорне x2, зелене x36. Лише текстом, без слеша.","Ruletka: czerwone i czarne x2, zielone x36. Tylko tekstem, bez slasha."],
+["games","/log","Последние 10 выпадений рулетки.","Last 10 roulette results.","Останні 10 випадінь рулетки.","Ostatnie 10 wyników ruletki."],
+["games","/duel 100 · /duel @user 100","Дуэль с предметами: против дилера или игрока (в группах).","Item duel against the dealer or a player (in groups).","Дуель із предметами: проти дилера або гравця (у групах).","Pojedynek z przedmiotami: z krupierem lub graczem (w grupach)."],
+["mafia","/mafia","Мафия в группе: 5–20 игроков, роли, ночь и голосование.","Mafia in a group: 5–20 players, roles, night and voting.","Мафія в групі: 5–20 гравців, ролі, ніч і голосування.","Mafia w grupie: 5–20 graczy, role, noc i głosowanie."],
+["mafia","/mprofile","Профиль мафии: 💵, 💎, предметы, победы.","Mafia profile: 💵, 💎, items, wins.","Профіль мафії: 💵, 💎, предмети, перемоги.","Profil mafii: 💵, 💎, przedmioty, wygrane."],
+["money","/balance","Наличные, банк и общая сумма. Старт — 1 000.","Cash, bank and total. You start with 1,000.","Готівка, банк і загальна сума. Старт — 1 000.","Gotówka, bank i suma. Start — 1 000."],
+["money","/bonus","+500 монет раз в 24 часа (после капчи).","+500 coins every 24 hours (after a captcha).","+500 монет раз на 24 години (після капчі).","+500 monet co 24 godziny (po captcha)."],
+["money","/work","80–250 монет раз в час. С ⛏ лопатой — вдвое больше.","80–250 coins once an hour. Double with a ⛏ shovel.","80–250 монет раз на годину. З ⛏ лопатою — вдвічі більше.","80–250 monet raz na godzinę. Z ⛏ łopatą dwa razy więcej."],
+["money","/deposit 500 · /withdraw 500","Банк: ~1,2% в сутки и защита от ограбления. Есть комиссия.","Bank: about 1.2% per day and safe from robbery. Fees apply.","Банк: ~1,2% на добу й захист від пограбування. Є комісія.","Bank: ok. 1,2% dziennie i ochrona przed kradzieżą. Obowiązuje prowizja."],
+["money","/pay @user 100","Перевод наличными с рук на руки.","Send cash hand to hand.","Переказ готівкою з рук у руки.","Przelew gotówką z ręki do ręki."],
+["money","/transfer @user 100","Перевод с банковского счёта на счёт (безопасно).","Bank-to-bank transfer (safe from robbery).","Переказ з банківського рахунку на рахунок (безпечно).","Przelew z konta na konto (bezpieczny)."],
+["money","/commission","Все комиссии. 💳 VIP-карта снижает их вдвое.","All fees. A 💳 VIP card halves them.","Усі комісії. 💳 VIP-картка знижує їх удвічі.","Wszystkie prowizje. 💳 Karta VIP zmniejsza je o połowę."],
+["money","/stars","Монеты за звёзды Telegram (в личке с ботом).","Buy coins with Telegram Stars (in private chat).","Монети за зірки Telegram (в особистих повідомленнях).","Monety za gwiazdki Telegram (na czacie prywatnym)."],
+["crime","/rob @user","Ограбить наличные: шанс 40%, пауза 2 часа, только в группах.","Rob someone’s cash: 40% chance, 2 h cooldown, groups only.","Пограбувати готівку: шанс 40%, пауза 2 години, лише в групах.","Okradnij gotówkę: szansa 40%, przerwa 2 h, tylko w grupach."],
+["crime","/shop · /buy 1 · /inventory · /use 1","Магазин: щит, отмычка, лопата, лутбокс, клевер, VIP.","Shop: shield, lockpick, shovel, lootbox, clover, VIP.","Магазин: щит, відмичка, лопата, лутбокс, конюшина, VIP.","Sklep: tarcza, wytrych, łopata, lootbox, koniczyna, VIP."],
+["crime","/auction · /auction sell 2 500 · /bid 3 600","Аукцион: торги 1 час, шаг ставки 5%.","Auction: 1 hour, minimum raise 5%.","Аукціон: торги 1 година, крок ставки 5%.","Aukcja: 1 godzina, minimalne podbicie 5%."],
+["misc","/top","Десять самых богатых игроков.","The ten richest players.","Десять найбагатших гравців.","Dziesięciu najbogatszych graczy."],
+["misc","/profile","ID, наличные, банк, место в топе, VIP.","ID, cash, bank, rank, VIP.","ID, готівка, банк, місце в топі, VIP.","ID, gotówka, bank, miejsce w rankingu, VIP."],
+["misc","/lang","Выбрать язык бота: RU, EN, UK, PL.","Choose the bot language: RU, EN, UK, PL.","Обрати мову бота: RU, EN, UK, PL.","Wybierz język bota: RU, EN, UK, PL."],
+["misc","/help","Ссылка на эту справку.","Link to this reference.","Посилання на цю довідку.","Link do tej listy komend."],
+["owner","/add_money @user 500 · /remove_money @user 500","Выдать или забрать наличные.","Give or take cash.","Видати або забрати готівку.","Dodaj lub zabierz gotówkę."],
+["owner","/wipe @user · /wipe all","Очистить профиль игрока или всю экономику.","Reset one player or the whole economy.","Очистити профіль гравця або всю економіку.","Wyczyść profil gracza lub całą ekonomię."],
+["owner","/commission pay 3","Изменить комиссию (deposit, withdraw, pay, transfer, auction), 0–50%.","Change a fee (deposit, withdraw, pay, transfer, auction), 0–50%.","Змінити комісію (deposit, withdraw, pay, transfer, auction), 0–50%.","Zmień prowizję (deposit, withdraw, pay, transfer, auction), 0–50%."]
+];
 
-  <h2 class="grp">🏆 Прочее</h2>
-  <section class="cmd">
-    <h2>🏆 Топ</h2>
-    <p><code>/top</code></p>
-    <p>Десять самых богатых игроков (наличные + банк).</p>
-  </section>
-  <section class="cmd">
-    <h2>👤 Профиль</h2>
-    <p><code>/profile</code></p>
-    <p>ID, наличные, банк, место в топе, VIP.</p>
-  </section>
-  <section class="cmd">
-    <h2>📖 Помощь</h2>
-    <p><code>/help</code></p>
-    <p>Краткая справка в чате.</p>
-  </section>
+// то же без слеша (работает текстом в чате; слова русские)
+const NS = {
+"/mines 100":"мины 100","/blackjack 100":"блэкджек 100 · бж 100","/log":"лог",
+"/duel 100 · /duel @user 100":"дуэль 100 · рр 100","/mafia":"мафия","/mprofile":"мпрофиль",
+"/balance":"баланс · мой баланс","/bonus":"бонус","/work":"работа · работать",
+"/deposit 500 · /withdraw 500":"депозит 500 · вклад 500 · снять 500 · вывести 500",
+"/pay @user 100":"передать @ник 100 · заплатить @ник 100","/transfer @user 100":"перевод @ник 100",
+"/commission":"комиссия · комиссии","/stars":"звёзды · донат","/rob @user":"ограбить @ник · грабить @ник",
+"/shop · /buy 1 · /inventory · /use 1":"магазин · инвентарь · инв",
+"/auction · /auction sell 2 500 · /bid 3 600":"аукцион · ставка 3 600",
+"/top":"топ","/profile":"профиль · мой профиль","/help":"помощь · хелп",
+"/add_money @user 500 · /remove_money @user 500":"выдать @ник 500 · забрать @ник 500","/wipe @user · /wipe all":"вайп @ник"
+};
+const L = ["ru","en","uk","pl"], $ = s => document.querySelector(s);
+let lang = "ru", cat = "all";
+try { const s = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang") || navigator.language.slice(0,2); if (L.includes(s)) lang = s; } catch(e){}
 
-  <h2 class="grp">👑 Для создателей бота</h2>
-  <section class="cmd">
-    <h2>Монеты</h2>
-    <p><code>/add_money @ник 500</code> · <code>/remove_money @ник 500</code></p>
-    <p>Выдать или забрать наличные. Telegram не поддерживает дефис в командах, поэтому пишется с подчёркиванием.</p>
-  </section>
-  <section class="cmd">
-    <h2>💎 Кристаллы (Мафия)</h2>
-    <p><code>/add_diamonds @ник 5</code> · <code>/remove_diamonds @ник 5</code></p>
-    <p>Выдать или забрать бриллианты игрока. Можно ответом на сообщение: <code>/add_diamonds 5</code>. Снять больше, чем есть, нельзя: баланс остановится на нуле.</p>
-  </section>
-  <section class="cmd">
-    <h2>🧹 Вайп</h2>
-    <p><code>/wipe @ник</code> · <code>/wipe all</code></p>
-    <p><b>/wipe @ник</b> (или ответом на сообщение) — очистить профиль игрока: баланс, банк, предметы, кулдауны, бонус. <b>/wipe all</b> — вайп всей экономики у всех игроков (с подтверждением кнопкой).</p>
-  </section>
-  <section class="cmd">
-    <h2>📊 Изменение комиссий</h2>
-    <p><code>/commission pay 3</code></p>
-    <p>Виды: deposit, withdraw, pay, transfer, auction. Значение 0–50%.</p>
-  </section>
-
-  <p class="muted">Монеты виртуальные и не имеют реальной стоимости.</p>
-</main>
+function render(){
+  const u = UI[lang], i = L.indexOf(lang) + 2;
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-t]").forEach(e => e.textContent = u[e.dataset.t]);
+  $("#news").href = NEWS_URL; $("#open").href = BOT_URL;
+  $("#q").placeholder = u.ph;
+  $("#lang").innerHTML = L.map(l => `<button aria-pressed="${l===lang}" data-l="${l}">${l.toUpperCase()}</button>`).join("");
+  $("#chips").innerHTML = ["all",...Object.keys(u.cats)].map(k => `<button class="chip" aria-pressed="${k===cat}" data-c="${k}">${k==="all"?u.all:u.cats[k]}</button>`).join("");
+  const q = $("#q").value.trim().toLowerCase();
+  let out = "", last = "";
+  for (const r of C) {
+    if (cat !== "all" && r[0] !== cat) continue;
+    if (q && !(r[1] + " " + (NS[r[1]] || "") + " " + r[i]).toLowerCase().includes(q)) continue;
+    if (cat === "all" && r[0] !== last) { out += `<h3 class="grp">${u.cats[r[0]]}</h3>`; last = r[0]; }
+    out += `<div class="row"><div></div><p></p></div>`.replace("<div></div>", `<div><code>${esc(r[1])}</code>${NS[r[1]] ? `<div class="ns">${u.ns}: <span>${esc(NS[r[1]])}</span></div>` : ""}</div>`).replace("<p></p>", `<p>${esc(r[i])}</p>`);
+  }
+  $("#list").innerHTML = out || `<p class="empty">${u.none}</p>`;
+}
+const esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+document.addEventListener("click", e => {
+  const l = e.target.closest("[data-l]"), c = e.target.closest("[data-c]");
+  if (l) { lang = l.dataset.l; try { localStorage.setItem("lang", lang); } catch(_){} render(); }
+  if (c) { cat = c.dataset.c; render(); }
+});
+$("#q").addEventListener("input", render);
+render();
+</script>
 </body>
 </html>
