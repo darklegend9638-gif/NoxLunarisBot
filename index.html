@@ -148,7 +148,7 @@ body.leave{opacity:0;transform:scale(.985);transition:opacity .4s ease .1s,trans
 const BOT_URL = "https://t.me/NoxLunarisBot", NEWS_URL = "https://t.me/LunarisBot_News";
 // Статус бота: URL, который отдаёт JSON {"ts": <unix-секунды последнего пинга бота>} или {"online": true}.
 // Пока пусто — блок статуса скрыт (чтобы не показывать выдуманный статус).
-const STATUS_URL = "/status";
+const STATUS_URL = "https://still-sound-710a.darklegend9638.workers.dev";   // сюда адрес Cloudflare Worker, например "https://lunaris-status.ИМЯ.workers.dev"
 const STALE_SEC = 90, POLL_MS = 30000;
 let botState = "chk";
 
@@ -171,6 +171,7 @@ const C = [
 ["games","/log","Последние 10 выпадений рулетки.","Last 10 roulette results.","Останні 10 випадінь рулетки.","Ostatnie 10 wyników ruletki."],
 ["games","/duel 100 · /duel @user 100","Дуэль с предметами: против дилера или игрока (в группах).","Item duel against the dealer or a player (in groups).","Дуель із предметами: проти дилера або гравця (у групах).","Pojedynek z przedmiotami: z krupierem lub graczem (w grupach)."],
 ["mafia","/mafia","Мафия в группе: 5–20 игроков, роли, ночь и голосование.","Mafia in a group: 5–20 players, roles, night and voting.","Мафія в групі: 5–20 гравців, ролі, ніч і голосування.","Mafia w grupie: 5–20 graczy, role, noc i głosowanie."],
+["mafia","/mafia roles · /mafia роли","Список всех ролей мафии и их способностей.","List of all mafia roles and their abilities.","Список усіх ролей мафії та їхніх здібностей.","Lista wszystkich ról mafii i ich zdolności."],
 ["mafia","/mprofile","Профиль мафии: 💵, 💎, предметы, победы.","Mafia profile: 💵, 💎, items, wins.","Профіль мафії: 💵, 💎, предмети, перемоги.","Profil mafii: 💵, 💎, przedmioty, wygrane."],
 ["money","/balance","Наличные, банк и общая сумма. Старт — 1 000.","Cash, bank and total. You start with 1,000.","Готівка, банк і загальна сума. Старт — 1 000.","Gotówka, bank i suma. Start — 1 000."],
 ["money","/bonus","+500 монет раз в 24 часа (после капчи).","+500 coins every 24 hours (after a captcha).","+500 монет раз на 24 години (після капчі).","+500 monet co 24 godziny (po captcha)."],
@@ -188,6 +189,7 @@ const C = [
 ["misc","/lang","Выбрать язык бота: RU, EN, UK, PL.","Choose the bot language: RU, EN, UK, PL.","Обрати мову бота: RU, EN, UK, PL.","Wybierz język bota: RU, EN, UK, PL."],
 ["misc","/help","Ссылка на эту справку.","Link to this reference.","Посилання на цю довідку.","Link do tej listy komend."],
 ["owner","/add_money @user 500 · /remove_money @user 500","Выдать или забрать наличные.","Give or take cash.","Видати або забрати готівку.","Dodaj lub zabierz gotówkę."],
+["owner","/add_diamonds @user 5 · /remove_diamonds @user 5","Выдать или забрать 💎 кристаллы.","Give or take 💎 diamonds.","Видати або забрати 💎 кристали.","Dodaj lub zabierz 💎 diamenty."],
 ["owner","/wipe @user · /wipe all","Очистить профиль игрока или всю экономику.","Reset one player or the whole economy.","Очистити профіль гравця або всю економіку.","Wyczyść profil gracza lub całą ekonomię."],
 ["owner","/commission pay 3","Изменить комиссию (deposit, withdraw, pay, transfer, auction), 0–50%.","Change a fee (deposit, withdraw, pay, transfer, auction), 0–50%.","Змінити комісію (deposit, withdraw, pay, transfer, auction), 0–50%.","Zmień prowizję (deposit, withdraw, pay, transfer, auction), 0–50%."]
 ];
